@@ -10,6 +10,6 @@ Arguments="--syncmode full --ipcdisable --verbosity 4 --rpc --rpcaddr localhost 
 
 nohup geth --datadir miner --rpcport 8100 --port 30303 --allow-insecure-unlock --unlock '0x59b801bcc4a67491aa317ed8a7241a69eeb65942' --password 'node1/password.txt' --identity Miner $Arguments > logs/Miner.log &
 
-nohup geth --datadir node2 --rpcport 8101 --port 30304 --identity Node_1 $Arguments > logs/Node_1.log &
+nohup geth --datadir node_1 --rpcport 8101 --port 30304 --identity Node_1 $Arguments > logs/Node_1.log &
 
-nohup geth --datadir node3 --rpcport 8102 --port 30305 --identity Noode_2 $Arguments > logs/Node_2.log &
+nohup geth --datadir node_2 --rpcport 8102 --port 30305 --identity Noode_2 $Arguments > logs/Node_2.log &
